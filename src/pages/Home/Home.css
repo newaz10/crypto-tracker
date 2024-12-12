@@ -68,11 +68,56 @@
   border-bottom: 1px solid #3c3c3c;
 }
 
+.table-layout:last-child {
+  border: none;
+}
+
 .table-layout p:nth-last-child(2) {
   text-align: center;
 }
 
-.table-layout p:last-of-type {
+.market-cap {
   text-align: right;
 }
 
+.layout-coin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coin-image {
+  width: 35px;
+}
+
+.increase {
+  color: #00d515;
+}
+
+.decrease {
+  color: #ff4646;
+}
+
+@media (max-width: 768px) {
+  .table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+
+  .market-cap {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-layout {
+    font-size: 13px;
+  }
+
+  .coin-image {
+    width: 25px;
+  }
+
+  .hero input {
+    width: 100px;
+  }
+}
