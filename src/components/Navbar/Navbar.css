@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 10%;
   color: #ddd;
   border-bottom: 2px solid #3c3c3c;
@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   gap: max(1vw, 12px);
+  padding-left: 40px;
 }
 
 .nav-select {
@@ -34,6 +35,10 @@
 .nav-select option {
   background: #09005c;
   color: white;
+}
+
+.logo {
+  padding-right: 40px;
 }
 
 .signup-btn {
@@ -51,7 +56,7 @@
 }
 
 .signup-btn img {
-    width: 12px;
+  width: 12px;
 }
 
 @media (max-width: 900px) {
@@ -66,7 +71,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .navbar {
     padding: 20px 5%;
   }
